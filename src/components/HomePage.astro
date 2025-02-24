@@ -1,0 +1,47 @@
+---
+// src/components/HomePage.astro
+import '../styles.css'; // Importa tus estilos CSS globales
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kareem Elramady</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="grid-overlay"></div> <!-- Cuadrícula animada -->
+
+    <header>
+        <div class="logo">Seb <br> Apps</div>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Home Page</a></li>
+                <li><a href="/about">About Me</a></li>  <!-- Nueva página About -->
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="text">
+            <h1 id="typing-text"></h1> <!-- Efecto de tipeo -->
+        </div>
+        <div class="phone">
+            <img src="src/assets/phone.png" alt="Celular Render">
+        </div>
+    </main>
+
+    <script is:inline src="/script.js"></script>
+</body>
+</html>
+
+<style>
+    /* Opcional: Si quieres estilos específicos para este componente, puedes agregarlos aquí */
+</style>
+
+<script>
+    // Opcional: Si quieres JavaScript específico para este componente que no está en script.js, puedes agregarlo aquí
+</script>

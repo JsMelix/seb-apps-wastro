@@ -1,0 +1,131 @@
+---
+import { Icon } from 'astro-icon'; // Asegúrate de tener astro-icon instalado: npm install astro-icon
+---
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <div class="logo-text">Kareem <br> Elramady</div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><Icon name="bi:facebook" /></a>
+                <a href="#" aria-label="YouTube"><Icon name="bi:youtube" /></a>
+                <a href="#" aria-label="X"><Icon name="bi:twitter-x" /></a>
+                <a href="#" aria-label="GitHub"><Icon name="bi:github" /></a>
+                <a href="#" aria-label="LinkedIn"><Icon name="bi:linkedin" /></a>
+                <a href="#" aria-label="WhatsApp"><Icon name="bi:whatsapp" /></a>
+                <a href="#" aria-label="Email"><Icon name="bi:envelope" /></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h3>Links:</h3>
+            <ul>
+                <li><a href="/">Home Page</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <hr>
+        <p>&copy; 2025 All rights reserved.</p>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: #000;
+        color: #fff;
+        padding: 2rem 0;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.8rem;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        white-space: pre-line;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .social-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        color: #fff;
+        transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .social-icons a:hover {
+        background-color: #fff;
+        color: #000;
+        transform: scale(1.1);
+    }
+
+    .footer-links {
+        text-align: left;
+    }
+
+    .footer-links h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.3rem;
+    }
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #ffcc00;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .copyright hr {
+        border: none;
+        border-top: 1px solid #fff;
+        margin-bottom: 0.5rem;
+    }
+</style>
