@@ -27,12 +27,35 @@ const { title = "SebAppsAI" } = Astro.props;
 
 <style is:global>
     :root {
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+        --max-width: 1200px;
+        --padding-x: clamp(1rem, 5vw, 2rem);
     }
-    
+
+    html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 14px;
+        }
+    }
+</style>
+
     html {
         font-family: system-ui, sans-serif;
         background: #fff;
